@@ -1,0 +1,16 @@
+fastapi
+uvicorn
+pydantic
+motor
+pymongo
+requests
+python-dotenv
+python-jose[cryptography]
+python-multipart
+pandas
+msal
+simple_salesforce
+openpyxl
+flask
+msoffcrypto-tool
+python-docx

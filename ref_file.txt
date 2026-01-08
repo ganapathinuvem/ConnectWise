@@ -1,0 +1,46 @@
+
+uvicorn main:app --reload --port 8080
+
+venv\Scripts\activate
+
+
+C:\Program Files\MongoDB\Server\8.0\bin
+
+
+db.createUser({
+    user: "mongodbadmin",
+    pwd: "AppShark022025",
+    roles: [ { role: "root", db: "admin" } ]
+})
+
+
+mongoadmin 
+ Pass : AppShark@022025 
+
+net stop MongoDB
+net start MongoDB
+
+mongod --remove --serviceName "MongoDBService"
+mongod --remove --serviceName "MongoDB"
+
+power sell
+Get-Service | Where-Object { $_.Name -like "*Mongo*" }
+Remove-Item -Recurse -Force "C:\MongoDB"
+Remove-Item -Recurse -Force "C:\data"
+
+
+net stop MongoDB
+sc delete MongoDB
+regedit  
+
+"C:\Program Files\MongoDB\Server\8.0\bin\mongod.exe" --config "C:\Program Files\MongoDB\Server\8.0\bin\mongod.cfg" --install
+net start MongoDB
+
+& "C:\Program Files\MongoDB\Server\8.0\bin\mongod.exe" --config "C:\Program Files\MongoDB\Server\8.0\bin\mongod.cfg" --install --serviceName MongoDB
+
+
+
+
+New-NetFirewallRule -DisplayName "MongoDB" -Direction Inbound -Protocol TCP -LocalPort 27017 -Action Allow
+
+

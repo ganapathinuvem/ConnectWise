@@ -1,0 +1,5 @@
+# ========== CONFIGURATION ==========
+SF_USERNAME = 'ganapathi.balla@appshark.com.dev'
+SF_PASSWORD = 'ApsJune@2025'
+SF_SECURITY_TOKEN = 'uK9dm22czbWmyYm4pWp9NDqwl'
+SF_DOMAIN = 'login'  # use 'test' for sandbox
